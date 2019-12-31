@@ -6,7 +6,7 @@ class ListNode:
 
 def fix_list(p):
     while p != None:
-        if isinstance(p.val, tuple):
+        if isinstance(p.val, list):
             p.val = p.val[0]
         p = p.next
     return
@@ -16,6 +16,7 @@ def fix_both(a, b):
     fix_list(b)
     return
 
+# It's faster to listify than to tuplify for marking nodes as explored!
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:
         
@@ -27,19 +28,19 @@ class Solution:
 
         while True:
             if p1 != None:
-                if isinstance(p1.val, tuple):
+                if isinstance(p1.val, list):
                     fix_both(headA, headB)
                     return p1
                 else:
-                    p1.val = (p1.val,)
+                    p1.val = [p1.val,]
                     p1 = p1.next
             
             if p2 != None:
-                if isinstance(p2.val, tuple):
+                if isinstance(p2.val, list):
                     fix_both(headA, headB)
                     return p2
                 else:
-                    p2.val = (p2.val,)
+                    p2.val = [p2.val,]
                     p2 = p2.next
             
             if p1 == None and p2 == None:
