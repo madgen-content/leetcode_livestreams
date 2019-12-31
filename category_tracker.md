@@ -4,7 +4,7 @@ should definitely be done by april 14
 
 Array - flipping an image, two-sum
 Hash Table - happy number
-Linked List - intersection of 2 linked lists, 
+Linked List - intersection of 2 linked lists, palindrome linked list
 Math
 Two Pointers
 String
