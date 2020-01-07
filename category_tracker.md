@@ -7,7 +7,7 @@ Array - flipping an image, two-sum
 Hash Table - happy number
 Linked List - intersection of 2 linked lists, palindrome linked list
 Math - rectangle overlap
-Two Pointers
+Two Pointers - array intersection
 String
 Binary Search
 Divide and Conquer
