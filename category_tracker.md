@@ -8,7 +8,7 @@ Hash Table - happy number
 Linked List - intersection of 2 linked lists, palindrome linked list
 Math - rectangle overlap
 Two Pointers - array intersection
-String
+String - first unique character
 Binary Search
 Divide and Conquer
 Dynamic Programming
