@@ -9,10 +9,12 @@ class Solution:
             else:
                 tracker[c] = v + 1
         
-        for i in range(len(s)):
-            c = s[i]
-            if tracker[c] == 1:
-                return i
+        goodletters = [c for c, n in tracker.items() if n == 1]
+
+        if len(goodletters == 0):
+            return -1
+        else:
+            return s.index(goodletters[0])
         
         return -1
 
@@ -32,3 +34,20 @@ class Solution:
             return -1
         else:
             return s.index( unique_char[0] )
+
+# an not as good alternative i wrote
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        
+        tracker = {}
+        for c in s:
+            tracker[c] = tracker.get(c, 0) + 1
+        
+        goodletters = [c for c, n in tracker.items() if n == 1]
+
+        if len(goodletters) == 0:
+            return -1
+        else:
+            return s.index(goodletters[0])
+        
+        return -1
