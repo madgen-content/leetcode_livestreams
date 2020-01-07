@@ -2,10 +2,11 @@ Trying to do 1 easy, 1 med, and 1 hard in each category
 see how fast I can do this
 should definitely be done by april 14
 
+Easy
 Array - flipping an image, two-sum
 Hash Table - happy number
 Linked List - intersection of 2 linked lists, palindrome linked list
-Math
+Math - rectangle overlap
 Two Pointers
 String
 Binary Search
