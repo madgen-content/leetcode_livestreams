@@ -9,7 +9,7 @@ Linked List - intersection of 2 linked lists, palindrome linked list
 Math - rectangle overlap
 Two Pointers - array intersection
 String - first unique character
-Binary Search
+Binary Search - peak index in mountain array
 Divide and Conquer
 Dynamic Programming
 Backtracking
