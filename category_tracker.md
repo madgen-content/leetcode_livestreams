@@ -10,6 +10,35 @@ Math - rectangle overlap
 Two Pointers - array intersection
 String - first unique character
 Binary Search - peak index in mountain array
+Divide and Conquer - maximum subarray
+Dynamic Programming
+Backtracking
+Stack
+Heap
+Greedy
+Sort
+Bit Manipulation
+Tree
+Depth-first Search
+Breadth-first Search
+Graph
+Design
+Trie
+Recursion
+Brainteaser
+Queue
+Minimax
+Geometry
+Sliding Window
+
+Medium
+Array
+Hash Table
+Linked List
+Math
+Two Pointers
+String
+Binary Search
 Divide and Conquer
 Dynamic Programming
 Backtracking
@@ -31,7 +60,6 @@ Segment Tree
 Binary Search Tree
 Recursion
 Brainteaser
-Memoization
 Queue
 Minimax
 Reservoir Sampling
@@ -39,6 +67,42 @@ Ordered Map
 Geometry
 Random
 Rejection Sampling
+Sliding Window
+Line Sweep
+
+Hard
+Array
+Hash Table
+Linked List
+Math
+Two Pointers
+String
+Binary Search
+Divide and Conquer
+Dynamic Programming
+Backtracking
+Stack
+Heap
+Greedy
+Sort
+Bit Manipulation
+Tree
+Depth-first Search
+Breadth-first Search
+Union Find
+Graph
+Design
+Topological Sort
+Trie
+Binary Indexed Tree
+Segment Tree
+Recursion
+Memoization
+Queue
+Minimax
+Ordered Map
+Geometry
+Random
 Sliding Window
 Line Sweep
 Rolling Hash
