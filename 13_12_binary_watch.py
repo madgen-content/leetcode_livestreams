@@ -6,9 +6,9 @@ def explore_hour(allowed_digits, lit_digits, current_digit_location, digit_tups:
         digit_tups.append(base_tup)
         return
 
-    # remaining_digits = current_digit_location + 5
-    # if allowed_digits - lit_digits > remaining_digits:
-    #     return
+    remaining_digits = current_digit_location + 5 + 1
+    if allowed_digits - lit_digits > remaining_digits:
+        return
     
     for i in range(2):
         new_base = time_add(base_tup, (2**current_digit_location) * i, 0)
@@ -27,9 +27,9 @@ def explore_minute(allowed_digits, lit_digits, current_digit_location, digit_tup
         digit_tups.append(base_tup)
         return
     
-    # remaining_digits = current_digit_location
-    # if allowed_digits - lit_digits > remaining_digits:
-    #     return
+    remaining_digits = current_digit_location + 1
+    if allowed_digits - lit_digits > remaining_digits:
+        return
 
     if current_digit_location < 0:
         return
