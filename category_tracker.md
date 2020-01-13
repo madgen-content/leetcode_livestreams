@@ -12,9 +12,9 @@ String - first unique character
 Binary Search - peak index in mountain array
 Divide and Conquer - maximum subarray
 Dynamic Programming - min cost climbing stairs
-Backtracking - 
+Backtracking - binary watch
 Stack - remove outermost parentheses
-Heap
+Heap - 
 Greedy
 Sort
 Bit Manipulation
