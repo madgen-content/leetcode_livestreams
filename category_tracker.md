@@ -11,7 +11,7 @@ Two Pointers - array intersection
 String - first unique character
 Binary Search - peak index in mountain array
 Divide and Conquer - maximum subarray
-Dynamic Programming - 
+Dynamic Programming - min cost climbing stairs
 Backtracking - 
 Stack - remove outermost parentheses
 Heap
