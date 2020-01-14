@@ -16,7 +16,7 @@ Backtracking - binary watch
 Stack - remove outermost parentheses
 Heap  - 
 Greedy - split into balanced strings
-Sort
+Sort  - sort array by parity
 Bit Manipulation
 Tree
 Depth-first Search
