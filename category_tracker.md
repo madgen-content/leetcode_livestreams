@@ -17,7 +17,7 @@ Stack - remove outermost parentheses
 Heap  - last stone weight
 Greedy - split into balanced strings
 Sort  - sort array by parity
-Bit Manipulation
+Bit Manipulation - Number of 1 bits
 Tree
 Depth-first Search
 Breadth-first Search
