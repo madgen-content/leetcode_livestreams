@@ -14,7 +14,7 @@ Divide and Conquer - maximum subarray
 Dynamic Programming - min cost climbing stairs
 Backtracking - binary watch
 Stack - remove outermost parentheses
-Heap  - 
+Heap  - last stone weight
 Greedy - split into balanced strings
 Sort  - sort array by parity
 Bit Manipulation
