@@ -18,7 +18,7 @@ Heap  - last stone weight
 Greedy - split into balanced strings
 Sort  - sort array by parity
 Bit Manipulation - Number of 1 bits
-Tree
+Tree - leaf-similar trees
 Depth-first Search
 Breadth-first Search
 Graph
