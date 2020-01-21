@@ -1,3 +1,5 @@
+# let all start locations grow towards each other to 
+# prevent going over same squares unnecessarily
 
 def explore_location(grid, limx, limy, row, col, rot_time):
     val = grid[row][col]
@@ -20,11 +22,14 @@ def explore_location(grid, limx, limy, row, col, rot_time):
 
     return extends
 
-def bfs_location(grid, row, col):
+def bfs_solve(grid, rot_starts):
     limx = len(grid[0])
     limy = len(grid)
 
-    exploration_buffer = explore_location(grid, limx, limy, row, col, 0)
+    exploration_buffer = []
+    for row, col in rot_starts:
+        search_start =  explore_location(grid, limx, limy, row, col, 0)
+        exploration_buffer.extend(search_start)
 
     while len(exploration_buffer) > 0:
         row, col, rot_time = exploration_buffer[0]
@@ -57,8 +62,7 @@ class Solution:
             return -1
         
         # explore rots
-        for r, c in rot_locations:
-            bfs_location(grid, r, c)
+        bfs_solve(grid, rot_locations)
 
         # iterate array, tracking smallest number > 0
         max_gt_two = float(2)
