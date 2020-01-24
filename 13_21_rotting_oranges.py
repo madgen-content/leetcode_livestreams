@@ -74,3 +74,41 @@ class Solution:
                     max_gt_two = v
         
         return max_gt_two - 3
+
+
+# BETTER SOLN FROM LEETCODE
+# better at stopping search
+# does 1 level of bfs at each rotten location before moving on
+def orangesRotting(self, grid: List[List[int]]) -> int:
+        
+        self.res = 0 
+        
+        rottens = []
+        n, m = len(grid), len(grid[0])
+        
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j]==2:
+                    rottens.append((i,j))
+        directions = [(1,0), (-1,0), (0,-1), (0,1)]
+        
+        while(len(rottens)>0):
+            stack = []
+            len_ = len(rottens)
+            for i in range(len_):
+                x, y = rottens.pop()
+                for dx, dy in directions:
+                    row, col = x+dx, y+dy
+                    if row<0 or row>=n or col<0 or col>=m or grid[row][col]!=1:
+                        continue
+                    grid[row][col] =2 
+                    stack.append((row, col))
+            if len(stack):
+                self.res+=1
+            rottens=stack[:]
+        
+        for i in range(n):
+            for j in range(m):
+                if grid[i][j]==1:
+                    return -1
+        return self.res
