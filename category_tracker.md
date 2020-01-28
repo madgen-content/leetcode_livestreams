@@ -22,7 +22,7 @@ Tree - leaf-similar trees
 Depth-first Search - flood fill
 Breadth-first Search - rotting oranges
 Graph  - flower planting AND town judge
-Design
+Design - implement queue using stacks
 Trie
 Recursion
 Brainteaser
