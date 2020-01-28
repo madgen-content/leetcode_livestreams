@@ -25,3 +25,31 @@ class Solution:
             return result[0]
         else:
             return -1
+
+
+# slow but more concise
+class Solution:
+    def findJudge(self, N: int, trust: List[List[int]]) -> int:
+        j, cnt = collections.Counter(b for a, b in trust).most_common(1)[0] if trust else (N, 0)
+        return j if j not in {a for a, b in trust} and cnt == N - 1 else -1
+
+# i made a point based soln
+class Solution:
+    def findJudge(self, N: int, trust: List[List[int]]) -> int:
+        if trust == []:
+            return 1
+
+        goal = N-1
+        d = {}
+        for truster, trustee in trust:
+            d[truster] = d.get(truster, 0) - 1
+            d[trustee] = d.get(trustee, 0) + 1
+
+        potentials = [x for x in d if d[x] == goal]
+
+        if len(potentials) == 1:
+            return potentials[0]
+        else:
+            return -1
+
+
