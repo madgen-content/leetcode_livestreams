@@ -62,3 +62,46 @@ class Solution:
             last_len = cur_len
         
         return best_word
+
+# freaky soln from leetcode
+class Solution(object):
+    def longestWord(self, words):
+        Trie = lambda: collections.defaultdict(Trie)
+        trie = Trie()
+        END = True
+
+        for i, word in enumerate(words):
+            reduce(dict.__getitem__, word, trie)[END] = i
+
+        stack = trie.values()
+        ans = ""
+        while stack:
+            cur = stack.pop()
+            if END in cur:
+                word = words[cur[END]]
+                if len(word) > len(ans) or len(word) == len(ans) and word < ans:
+                    ans = word
+                stack.extend([cur[letter] for letter in cur if letter != END])
+
+        return ans
+
+# GREAT soln from discussion
+# added my short circuiting
+class Solution(object):
+    def longestWord(self, words):
+        if len(words) == 0:
+            return ''
+        
+        if min([len(x) for x in words]) > 1:
+            return ''
+
+        apart = [set() for _ in range(30)]
+        for word in words:
+            apart[len(word)-1].add(word)
+        res = {""}
+        n = 0
+        while res and n < 30:
+            last = res
+            res = {word for word in apart[n] if word[:-1] in last}
+            n += 1
+        return sorted(list(res or last))[0]
