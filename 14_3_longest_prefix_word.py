@@ -15,10 +15,11 @@ def add_to_trie(root: Node, word):
             if len(word) == 1:
                 return True
             else:
-                return add_to_trie(child, word[1::])
+                del word[0]
+                return add_to_trie(child, word)
     
     if len(word) == 1:
-        root.children.append(Node(word))
+        root.children.append(Node(word[0]))
         return True
     else:
         return False
@@ -52,7 +53,7 @@ class Solution:
                 return best_word
             
             lword = list(word)
-            added = add_to_trie(root, word)
+            added = add_to_trie(root, lword)
             # print_trie(root)
             if added:
                 if len(word) > len(best_word):
