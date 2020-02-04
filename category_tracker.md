@@ -24,7 +24,7 @@ Breadth-first Search - rotting oranges
 Graph  - flower planting AND town judge
 Design - implement queue using stacks
 Trie - longest prefix word
-Recursion
+Recursion - longest univalue path
 Brainteaser
 Queue
 Minimax
