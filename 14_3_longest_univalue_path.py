@@ -6,38 +6,50 @@ class TreeNode:
         self.right = None
     
 
-def base_explore(root, candidates):
-    if root.left:
-        explore(root, root.left, 0, 0, candidates)
-    if root.right: 
-        explore(root, root.right, 0, 0, candidates)
+def explore(root: TreeNode, matchval: int, pathsize: list, candidates: list):
+    if root.val == matchval:
+        pathsize[0] += 1
+        if root.left:
+            explore(root.left, matchval, pathsize, candidates)
+    
+        if root.right: 
+            explore(root.right, matchval, pathsize, candidates)
+    else:
+        newpathsize = [0]
+        if root.left:
+            explore(root.left, root.val, newpathsize, candidates)
+    
+        if root.right:
+            explore(root.right, root.val, newpathsize, candidates)
+        
+        candidates.append(newpathsize[0])
+    
     return
 
-def explore(parent, root: TreeNode, cur_depth: int, cur_maxlen: int, candidates: list):
-    if root.val == parent.val:
-        next_depth = cur_depth + 1
-    else:
-        next_depth = 0
-    
-    cur_maxlen = max(next_depth, cur_maxlen)
+def printtree(root):
+    print(root.val)
 
     if root.left:
-        explore(root, root.left, next_depth, cur_maxlen, candidates)
-    
-    if root.right: 
-        explore(root, root.right, next_depth, cur_maxlen, candidates)
-    
-    if root.left == None and root.right == None:
-        candidates.append(cur_maxlen)
+        print("L")
+        printtree(root.left)
+    else:
+        print('ldone')
 
+    if root.right:
+        print("R")
+        printtree(root.right)
+    else:
+        print('rdone')
     return
 
 class Solution:
     def longestUnivaluePath(self, root: TreeNode) -> int:
-        if root.left == None and root.right == None:
+        if root == None or (root.left == None and root.right == None):
             return 0
         
+        printtree(root)
+        
         candidates = []
-        base_explore(root, candidates)
+        explore(root, -1, [-1], candidates)
 
         return max(candidates)
