@@ -23,7 +23,7 @@ Depth-first Search - flood fill
 Breadth-first Search - rotting oranges
 Graph  - flower planting AND town judge
 Design - implement queue using stacks
-Trie
+Trie - longest prefix word
 Recursion
 Brainteaser
 Queue
