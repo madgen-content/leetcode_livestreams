@@ -25,7 +25,7 @@ Graph  - flower planting AND town judge
 Design - implement queue using stacks
 Trie - longest prefix word
 Recursion - longest univalue path
-Brainteaser
+Brainteaser - moving stones
 Queue
 Minimax
 Geometry
