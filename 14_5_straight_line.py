@@ -21,3 +21,20 @@ class Solution:
         else:
             return True
         return
+
+# alternative courtesy of zombiekillerwhale
+class Solution(object):
+    def checkStraightLine(self, coordinates):
+        """
+        :type coordinates: List[List[int]]
+        :rtype: bool
+        """
+        p1, p2 = coordinates[0], coordinates[1]
+        x_diff = p2[0] - p1[0]
+        y_diff = p2[1] - p1[1]
+        try:
+            m = y_diff / x_diff
+        except ZeroDivisionError:
+            return all(coordinate[0] == p1[0] for coordinate in coordinates)
+        b = -(m * p1[0]) + p1[1]
+        return all(m * x + b == y for x, y in coordinates)
