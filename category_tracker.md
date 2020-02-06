@@ -26,8 +26,8 @@ Design - implement queue using stacks
 Trie - longest prefix word
 Recursion - longest univalue path
 Brainteaser - moving stones
-Queue     - ping timer
-Minimax
+Queue  - ping timer
+Minimax  - nim game
 Geometry
 Sliding Window
 
