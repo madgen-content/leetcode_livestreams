@@ -29,7 +29,6 @@ Brainteaser - moving stones
 Queue  - ping timer
 Minimax  - nim game
 Geometry - check if straight line
-Sliding Window
 
 Medium
 Array
