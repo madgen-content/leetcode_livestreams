@@ -28,7 +28,7 @@ Recursion - longest univalue path
 Brainteaser - moving stones
 Queue  - ping timer
 Minimax  - nim game
-Geometry
+Geometry - check if straight line
 Sliding Window
 
 Medium
