@@ -31,7 +31,7 @@ Minimax  - nim game
 Geometry - check if straight line
 
 Medium
-Array
+Array - product of array except self
 Hash Table
 Linked List
 Math
