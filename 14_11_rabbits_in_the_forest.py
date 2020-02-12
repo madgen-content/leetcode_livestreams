@@ -13,3 +13,8 @@ class Solution:
             min_num += uniq_rabbits
             
         return min_num
+
+# good twoliner from discussion
+def numRabbits(self, answers):
+    c = collections.Counter(answers)
+    return sum((c[i] + i) / (i + 1) * (i + 1) for i in c)
