@@ -32,7 +32,7 @@ Geometry - check if straight line
 
 Medium
 Array - product of array except self
-Hash Table
+Hash Table - rabbits in the for
 Linked List
 Math
 Two Pointers
