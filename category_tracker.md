@@ -34,7 +34,7 @@ Medium
 Array - product of array except self
 Hash Table - rabbits in the for
 Linked List - partition list
-Math
+Math - clumsy factorial
 Two Pointers
 String
 Binary Search
