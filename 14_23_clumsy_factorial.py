@@ -29,3 +29,17 @@ class Solution:
                 accum.append(-1 * n)
         
         return sum(accum)
+
+# other solns from discussion
+
+# exploits some pattern I didn't see
+class Solution:
+    def clumsy(self, N):
+            return [0, 1, 2, 6, 7][N] if N < 5 else N + [1, 2, 2, - 1][N % 4]
+
+# python 2, as good as expr evaluation will be
+from itertools import cycle
+class Solution:
+    def clumsy(self, N):
+            op = itertools.cycle("*/+-")
+            return eval("".join(str(x) + next(op) for x in range(N, 0, -1))[:-1])
