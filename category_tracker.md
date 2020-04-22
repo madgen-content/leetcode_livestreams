@@ -32,10 +32,10 @@ Geometry - check if straight line
 
 Medium
 Array - product of array except self
-Hash Table - rabbits in the for
+Hash Table - rabbits in the forest, prison cells after N days
 Linked List - partition list
 Math - clumsy factorial
-Two Pointers
+Two Pointers - 
 String
 Binary Search
 Divide and Conquer
