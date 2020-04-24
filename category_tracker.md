@@ -36,7 +36,7 @@ Array - product of array except self
 Hash Table - rabbits in the forest, prison cells after N days
 Linked List - partition list
 Math - clumsy factorial
-Two Pointers - 
+Two Pointers - partition labels
 String
 Binary Search
 Divide and Conquer
