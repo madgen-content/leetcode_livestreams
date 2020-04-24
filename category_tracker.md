@@ -31,6 +31,7 @@ Minimax  - nim game
 Geometry - check if straight line
 
 Medium
+bonus - sort matrix diagonally
 Array - product of array except self
 Hash Table - rabbits in the forest, prison cells after N days
 Linked List - partition list
