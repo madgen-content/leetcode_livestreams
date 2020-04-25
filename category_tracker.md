@@ -37,7 +37,7 @@ Hash Table - rabbits in the forest, prison cells after N days
 Linked List - partition list
 Math - clumsy factorial
 Two Pointers - partition labels
-String - custom sort string
+String - custom sort string, find & replace pattern
 Binary Search
 Divide and Conquer
 Dynamic Programming
