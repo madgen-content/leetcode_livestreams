@@ -38,7 +38,7 @@ Linked List - partition list
 Math - clumsy factorial
 Two Pointers - partition labels
 String - custom sort string, find & replace pattern
-Binary Search
+Binary Search - koko bananas
 Divide and Conquer
 Dynamic Programming
 Backtracking
