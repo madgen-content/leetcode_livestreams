@@ -77,3 +77,17 @@ class Solution:
             return False
         
         return rec_mat_search(matrix, target, (0,0), (len(matrix)-1, len(matrix[0])-1) )
+
+# ==========================================
+# ywanes's JAVA soln, MUCH BETTER. much simpler
+# I didn't think about the other corners enough
+
+class Solution { public boolean searchMatrix(int[][] matrix, int target) { 
+    int x=matrix.length-1;
+    int y=0;
+    while(true) { if ( x < 0 || y >= matrix[0].length ) return false;
+    if ( matrix[x][y] == target ) return true;
+    if ( matrix[x][y] < target ) y++;
+    else x--;
+    } } 
+}
