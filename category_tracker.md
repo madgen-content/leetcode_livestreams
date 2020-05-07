@@ -39,12 +39,12 @@ Math - clumsy factorial
 Two Pointers - partition labels
 String - custom sort string, find & replace pattern
 Binary Search - koko bananas
-Divide and Conquer
+Divide and Conquer - search a 2d matrix
 Dynamic Programming
 Backtracking
 Stack
 Heap
-Greedy
+Greedy - carpooling
 Sort
 Bit Manipulation
 Tree
