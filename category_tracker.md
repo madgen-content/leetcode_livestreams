@@ -41,7 +41,7 @@ String - custom sort string, find & replace pattern
 Binary Search - koko bananas
 Divide and Conquer - search a 2d matrix
 Dynamic Programming - matrix sum
-Backtracking
+Backtracking - combination sum II
 Stack
 Heap
 Greedy - carpooling
