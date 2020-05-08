@@ -42,7 +42,7 @@ Binary Search - koko bananas
 Divide and Conquer - search a 2d matrix
 Dynamic Programming - matrix sum
 Backtracking - combination sum II
-Stack
+Stack - minimum add to make parentheses valid
 Heap
 Greedy - carpooling
 Sort
