@@ -43,7 +43,7 @@ Divide and Conquer - search a 2d matrix
 Dynamic Programming - matrix sum
 Backtracking - combination sum II
 Stack - minimum add to make parentheses valid
-Heap
+Heap - k closest points to origin
 Greedy - carpooling
 Sort
 Bit Manipulation
