@@ -45,9 +45,9 @@ Backtracking - combination sum II
 Stack - minimum add to make parentheses valid
 Heap - k closest points to origin
 Greedy - carpooling
-Sort
+Sort - 
 Bit Manipulation
-Tree
+Tree - zig zag traversal
 Depth-first Search
 Breadth-first Search
 Union Find
