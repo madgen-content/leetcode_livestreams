@@ -45,7 +45,7 @@ Backtracking - combination sum II
 Stack - minimum add to make parentheses valid
 Heap - k closest points to origin
 Greedy - carpooling
-Sort - 
+Sort - sort colors
 Bit Manipulation
 Tree - zig zag traversal
 Depth-first Search
