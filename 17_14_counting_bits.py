@@ -15,3 +15,25 @@ class Solution:
             bitreference.update(new_entries)
 
         return [bitreference[x] for x in range(0,num+1)]
+
+
+# THIS IS JUST AS GOOD???
+# I'm mad
+return [bin(i)[2:].count("1") for i in range(num+1)]
+
+
+# pattern based soln
+class Solution:
+    def countBits(self, num):
+        result = [0,1,1,2,1,2,2,3]
+        if num <= 7:
+            return result[:num+1]
+        else:
+            power = 3
+            while not 2**(power+1)-1> num >= 2**power-1:
+                power += 1
+            extra = num - 2**power
+            while power > 3:
+                result += [x+1 for x in result]
+                power -= 1
+            return result+[x+1 for x in result[:extra+1]]
