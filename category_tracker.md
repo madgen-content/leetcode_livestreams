@@ -49,7 +49,7 @@ Sort - sort colors
 Bit Manipulation - counting bits
 Tree - zig zag traversal
 Depth first - surrounded regions
-Breadth first Search
+Breadth first Search - n-ary tree traversal
 Union Find
 Graph
 Design
