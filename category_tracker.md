@@ -48,7 +48,7 @@ Greedy - carpooling
 Sort - sort colors
 Bit Manipulation - counting bits
 Tree - zig zag traversal
-Depth first Search
+Depth first - surrounded regions
 Breadth first Search
 Union Find
 Graph
