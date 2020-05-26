@@ -50,9 +50,9 @@ Bit Manipulation - counting bits
 Tree - zig zag traversal
 Depth first - surrounded regions
 Breadth first Search - n-ary tree traversal
-Union Find
-Graph
-Design
+Union Find - 
+Graph - maximal level sum of binary tree
+Design - 
 Topological Sort
 Trie
 Binary Indexed Tree
