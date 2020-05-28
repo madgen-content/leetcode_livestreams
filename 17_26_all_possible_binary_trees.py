@@ -33,7 +33,7 @@ def tree_to_bools(root, buf):
     return tuple(buf)
 
 
-def recursive_build_trees(answer, N, cur_count, root, current_node):
+def recursive_build_trees(exploration_buffer, answer, N, cur_count, root, current_node):
     if current_node.left is None and current_node.right is None:
         current_node.left = TreeNode()
         current_node.right = TreeNode()
@@ -48,19 +48,29 @@ def recursive_build_trees(answer, N, cur_count, root, current_node):
             answer[tree_id] = treecopy
             return
         else:
-            recursive_build_trees(answer, N, new_count, treecopy, treecopy)            
+            exploration_buffer.append((answer, N, new_count, treecopy, treecopy))
 
     else:
-        recursive_build_trees(answer, N, cur_count, root, current_node.left) 
-        recursive_build_trees(answer, N, cur_count, root, current_node.right) 
+        recursive_build_trees(exploration_buffer, answer, N, cur_count, root, current_node.left) 
+        recursive_build_trees(exploration_buffer, answer, N, cur_count, root, current_node.right) 
     return
 
 class Solution:
     def allPossibleFBT(self, N: int) -> List[TreeNode]:
 
+        if N == 1:
+            return [TreeNode()]
+        
+        if N % 2 == 0:
+            return []
+
         answer = {}
         count = 1
         root = TreeNode()
+        exploration_buffer = [(answer, N, count, root, root)]
 
-        recursive_build_trees(answer, N, count, root, root)
+        while len(exploration_buffer) > 0:
+            buf_tup = exploration_buffer.pop()
+            recursive_build_trees(exploration_buffer, *buf_tup)
+
         return answer.values()
