@@ -52,12 +52,11 @@ Depth first - surrounded regions
 Breadth first Search - n-ary tree traversal
 Union Find - 
 Graph - maximal level sum of binary tree
-Design
-Topological Sort
+Topological Sort - 
 Trie
 Binary Indexed Tree
 Segment Tree
-Binary Search Tree
+Binary Search Tree - binsearch to greater sum tree
 Recursion - all possible binary trees
 Brainteaser
 Queue
