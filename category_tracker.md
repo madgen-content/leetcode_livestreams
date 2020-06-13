@@ -58,12 +58,12 @@ Binary Indexed Tree
 Segment Tree
 Binary Search Tree - binsearch to greater sum tree
 Recursion - all possible binary trees
-Brainteaser
+Brainteaser - 
 Queue
 Minimax
 Reservoir Sampling
 Ordered Map
-Geometry
+Geometry - circle and rectangle overlap
 Random
 Rejection Sampling
 Sliding Window
