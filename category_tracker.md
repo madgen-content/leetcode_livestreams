@@ -64,7 +64,7 @@ Minimax
 Reservoir Sampling
 Ordered Map
 Geometry - circle and rectangle overlap
-Random
+Random - rand7torand10
 Rejection Sampling
 Sliding Window
 Line Sweep
