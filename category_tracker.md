@@ -58,7 +58,7 @@ Binary Indexed Tree
 Segment Tree
 Binary Search Tree - binsearch to greater sum tree
 Recursion - all possible binary trees
-Brainteaser - 
+Brainteaser - airplane seat assignment probability
 Queue
 Minimax
 Reservoir Sampling
