@@ -50,7 +50,7 @@ Bit Manipulation - counting bits
 Tree - zig zag traversal  
 Depth first - surrounded regions  
 Breadth first Search - n-ary tree traversal  
-Union Find -   
+Union Find - regions cut by slashes   
 Graph - maximal level sum of binary tree  
 Topological Sort -   
 Trie  
