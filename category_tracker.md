@@ -66,7 +66,7 @@ Ordered Map
 Geometry - circle and rectangle overlap  
 Random - rand7torand10  
 Rejection Sampling  
-Sliding Window  
+Sliding Window - max consecutive ones III 
 Line Sweep  
   
 Hard  
