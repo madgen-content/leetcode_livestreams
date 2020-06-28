@@ -5,11 +5,13 @@ class Solution:
         
         if len(A) == 0:
             return 0
+
+        listsum = sum(A)
         
-        if sum(A) == len(A):
+        if listsum == len(A):
             return len(A)
 
-        if sum(A) == 0:
+        if listsum == 0:
             return 0 
         
         i = 0
