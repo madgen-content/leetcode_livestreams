@@ -53,7 +53,7 @@ Breadth first Search - n-ary tree traversal
 Union Find - regions cut by slashes   
 Graph - maximal level sum of binary tree  
 Topological Sort -   
-Trie  
+Trie - camelcase matching 
 Binary Indexed Tree  
 Segment Tree  
 Binary Search Tree - binsearch to greater sum tree  
