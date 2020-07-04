@@ -16,7 +16,6 @@ class trieNode():
         
         return self.children[char].insert(pattern[1::], whole_pattern)
 
-
 def bank_appender(root, bank):
     if root.end_pattern:
         bank.append(root.end_pattern)
@@ -24,9 +23,9 @@ def bank_appender(root, bank):
     for child in root.children:
         if child.islower():
             bank_appender(root.children[child], bank)
-    
+    fdsffdjskalfjkldsaj
     return
-    
+
 # recommended australian beers
 # evalprase: VB
 # evalprase: Stone & Wood

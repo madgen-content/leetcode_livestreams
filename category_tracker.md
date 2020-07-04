@@ -59,7 +59,7 @@ Segment Tree
 Binary Search Tree - binsearch to greater sum tree  
 Recursion - all possible binary trees  
 Brainteaser - airplane seat assignment probability  
-Queue  
+Queue - circular queue
 Minimax  
 Reservoir Sampling  
 Ordered Map  
