@@ -35,3 +35,49 @@ class Solution:
                 del tracker[0]
                     
         return len(intervals) - removal_count
+    
+# ----------------------------------------------
+# ywanes soln
+
+class Solution {
+    public int removeCoveredIntervals(int[][] intervals) {
+        int len=intervals.length;
+        int retorno=len;
+        boolean [] remove = new boolean[len];
+        // analisando a remocao de i perante j
+        for ( int i=0;i<len;i++ )
+        {
+            for ( int j=0;j<len;j++ )
+            {
+                if ( i == j ) continue;
+                if ( intervals[i][0] >= intervals[j][0] && intervals[i][1] <= intervals[j][1] )
+                {
+                    remove[i]=true;
+                    break;
+                }
+            }            
+        }
+        for ( int i=0;i<len;i++ )
+            if ( remove[i] )
+                retorno--;
+        return retorno;
+    }
+}
+
+# my python take on ywanes soln
+from collections import defaultdict
+class Solution:
+    def removeCoveredIntervals(self, intervals: List[List[int]]) -> int:
+        ret  = [1] * len(intervals)
+        for i in range(len(intervals)-1):
+            for j in range(i+1, len(intervals)):
+                a,b = intervals[i]
+                c,d = intervals[j]
+                
+                if (a <= c and d <= b):
+                    ret[j] = 0
+                
+                if (c <= a and b <= d):
+                    ret[i] = 0
+                    break
+        return sum(ret)
