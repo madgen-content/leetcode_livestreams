@@ -1,5 +1,8 @@
+# this is actually code for 2 problems
+
 class Node:
     ident = None
+    parents = None
     children = None
     been_visited = False
     one_time_flag_visited = False
@@ -7,6 +10,7 @@ class Node:
     def __init__(self, ident):
         self.ident = ident
         self.children = list()
+        self.parents = list()
         return
 
 class Graph:
@@ -20,6 +24,7 @@ class Graph:
         for rule in rules_list:
             first, second = rule
             nodes[second].children.append(nodes[first])
+            nodes[first].parents.append(nodes[second])
 
         self.nodes = nodes
         return
@@ -62,10 +67,36 @@ class Graph:
 
         return False
     
+    def _topological_sort_helper(self, node, stack):
+        node.been_visited = True 
+        for child in node.children:
+            if child.been_visited == False:
+                self._topological_sort_helper(child, stack)
+        
+        stack.append(node.ident)
 
+        return
+    def topological_sort(self):
 
+        stack = []
+        for node in self.nodes:
+            if node.been_visited == False:
+                self._topological_sort_helper(node, stack)
+        stack.reverse()
+        return stack
+
+    
 class Solution:
-    def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+    def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
         class_graph = Graph(numCourses, prerequisites)
-        return not class_graph.cycle_detect()
+        if class_graph.cycle_detect():
+            return []
+        else:
+            return class_graph.topological_sort()
+        
+
+# class Solution:
+#     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+#         class_graph = Graph(numCourses, prerequisites)
+#         return not class_graph.cycle_detect()
         
