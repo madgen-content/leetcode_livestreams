@@ -55,11 +55,11 @@ Graph - maximal level sum of binary tree
 Topological Sort - course schedule II  
 Trie - camelcase matching 
 Binary Indexed Tree - mutable range sum  
-Segment Tree  
+Segment Tree - max events  
 Binary Search Tree - binsearch to greater sum tree  
 Recursion - all possible binary trees  
 Brainteaser - airplane seat assignment probability  
-Queue - circular queue
+Queue - circular queue  
 Minimax - predict the winner  
 Reservoir Sampling - random pick index  
 Geometry - circle and rectangle overlap  
