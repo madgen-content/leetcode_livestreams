@@ -54,14 +54,14 @@ Union Find - regions cut by slashes
 Graph - maximal level sum of binary tree  
 Topological Sort - course schedule II  
 Trie - camelcase matching 
-Binary Indexed Tree  
+Binary Indexed Tree -   
 Segment Tree  
 Binary Search Tree - binsearch to greater sum tree  
 Recursion - all possible binary trees  
 Brainteaser - airplane seat assignment probability  
 Queue - circular queue
 Minimax  
-Reservoir Sampling  
+Reservoir Sampling - random pick index  
 Geometry - circle and rectangle overlap  
 Random - rand7torand10  
 Rejection Sampling - random point in circle  
