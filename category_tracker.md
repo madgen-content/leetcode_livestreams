@@ -62,10 +62,9 @@ Brainteaser - airplane seat assignment probability
 Queue - circular queue
 Minimax  
 Reservoir Sampling  
-Ordered Map  
 Geometry - circle and rectangle overlap  
 Random - rand7torand10  
-Rejection Sampling  
+Rejection Sampling - random point in circle  
 Sliding Window - max consecutive ones III 
 Line Sweep - covered intervals  
   
