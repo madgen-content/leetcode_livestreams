@@ -54,7 +54,7 @@ Union Find - regions cut by slashes
 Graph - maximal level sum of binary tree  
 Topological Sort - course schedule II  
 Trie - camelcase matching 
-Binary Indexed Tree -   
+Binary Indexed Tree - mutable range sum  
 Segment Tree  
 Binary Search Tree - binsearch to greater sum tree  
 Recursion - all possible binary trees  
