@@ -60,7 +60,7 @@ Binary Search Tree - binsearch to greater sum tree
 Recursion - all possible binary trees  
 Brainteaser - airplane seat assignment probability  
 Queue - circular queue
-Minimax  
+Minimax - predict the winner  
 Reservoir Sampling - random pick index  
 Geometry - circle and rectangle overlap  
 Random - rand7torand10  
