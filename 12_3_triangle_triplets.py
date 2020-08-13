@@ -73,3 +73,23 @@ class Solution:
         return num_valid_triangles
 
 
+# review soln
+class Solution:
+    def triangleNumber(self, nums: List[int]) -> int:
+        nums = [x for x in nums if x !=0]
+        if len(nums) < 3:
+            return 0
+        
+        nums.sort()
+        valid_triangles = 0
+        for i in range(len(nums) - 2):
+            k = i + 2
+            for j in range(i+1, len(nums)-1):
+                a,b = nums[i],nums[j]
+                lim = a+b
+                while k < len(nums) and lim > nums[k]:
+                    k+=1
+                count = k-j-1
+                valid_triangles += count
+
+        return valid_triangles
