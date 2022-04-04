@@ -1,6 +1,7 @@
 def rec_get_sum_solns(target, soln_set, current_soln, candidates):
     if sum(current_soln) == target:
         soln_set.add(tuple(current_soln))
+        return
     
     upcoming_candidates = candidates[:]
     for n in candidates:

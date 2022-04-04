@@ -23,7 +23,6 @@ def bank_appender(root, bank):
     for child in root.children:
         if child.islower():
             bank_appender(root.children[child], bank)
-    fdsffdjskalfjkldsaj
     return
 
 # recommended australian beers
