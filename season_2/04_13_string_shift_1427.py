@@ -8,6 +8,5 @@ class Solution:
         if shift_total == 0:
             return s
         else:
-            print(shift_total)
             shift_total %= len(s)
             return s[shift_total:] + s[:shift_total]
