@@ -95,3 +95,25 @@ class Solution:
             if succ is not None:
                 mindiff = min(mindiff, abs(r.val - succ.val))
         return mindiff
+
+# -------------------------------
+class Solution:
+    min_val = sys.maxsize
+    prev = sys.maxsize
+    
+    def getMinimumDifference(self, root: Optional[TreeNode]) -> int:
+        
+        self.inorder(root)
+        
+        return self.min_val
+        
+    def inorder(self, root: Optional[TreeNode]):
+        if(root==None):
+            return
+        
+        self.inorder(root.left);
+        
+        self.min_val = min(self.min_val, abs(root.val - self.prev));
+        self.prev = root.val
+        
+        self.inorder(root.right)
