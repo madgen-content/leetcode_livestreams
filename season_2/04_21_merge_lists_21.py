@@ -10,7 +10,7 @@ class Solution:
             return list1
         if not list1:
             return list2
-            
+
         if list1.val < list2.val:
             cur = list1
             list1 = list1.next
@@ -23,15 +23,11 @@ class Solution:
 
             if list2 is None:
                 cur.next = list1
-                cur = cur.next
-                list1 = list1.next
-                continue
+                break
             
             if list1 is None:
                 cur.next = list2
-                cur = cur.next
-                list2 = list2.next
-                continue
+                break
 
             if list1.val < list2.val:
                 cur.next = list1
