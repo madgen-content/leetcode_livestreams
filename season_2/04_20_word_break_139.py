@@ -11,6 +11,9 @@ class Solution:
 
         return wordBreakRecur(s, set(wordDict), 0)
 
+# https://leetcode.com/problems/word-break/discuss/511991/Python-Trie
+# ^ a good one
+
 # my attempt?
 from typing import *
 class Solution:
@@ -20,5 +23,3 @@ class Solution:
         s2 = set(''.join(wordDict))
         if len(s1.symmetric_difference(s2)) > 0:
             return False
-        
-        
