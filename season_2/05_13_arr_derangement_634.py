@@ -10,12 +10,9 @@ class Solution:
         sub = 0
         sign = -1**(n)
         for i in range(n, -1, -1):
-            print(tot, mul, sub)
             tot += mul * sign
-            print(tot, mul, sub)
-            print()
             mul *= (n - sub)
             sub += 1
             sign = -sign
 
-        return tot % mod
+        return (tot +mod)% mod
